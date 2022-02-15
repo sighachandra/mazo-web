@@ -1,9 +1,10 @@
 :root {
 	--primaryYellow: #f8af29;
-    --secondaryBlack: #25282c;
+    --secondaryBlack: #1e1d23;
     --fontBlack: #1e1d23;
     --white: #fff;
     --grey-shadow: #efefef;
+    --fontgrey: #5d5c60;
    }
    /*main header styling*/
 .main_header1 {
@@ -28,6 +29,68 @@
   -webkit-transform: skew(30deg, 0deg);
   transform: skew(35deg, 0deg) translateX(-50%);
   border-right: 4px solid white;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    
+  }
+
+
+  /*dropdownAnimation*/
+
+  .animate {
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+ /* end of the section*/
+.dropsss{
+	transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 .container_main{
 	margin-right: 320px;
@@ -66,7 +129,9 @@
 		color: var(--fontBlack) !important;
 		font-weight: 600;
 		margin-right: 12px;
+
 	}
+	
 	.search_icon_style{
 		    height: 46%;
     padding-right: 12px;
@@ -133,4 +198,29 @@
    .footer2_padding{
    	padding: 70px 0px 50px 0px;
    }
+   .copyright_style{
+   	color: var(--fontgrey);
+   }
+   .footer_font{
+   	font-size: 15px;
+   }
+   .footer_font_p{
+   	margin-top: 22px;
+   	margin-left: 16px;
+   }
+   .nav_spacing_foot{
+   	 padding-left: 30px;
+   }
+   .nav_spacing_foot:hover{
+   	color: var(--primaryYellow);
+   }
+   .footer_font_icon{
+   	font-size: 22px;
+   	margin-left: 30px;
+   	color: var(--fontgrey);
+   }
+   .footer_font_icon:hover{
+   	color: var(--primaryYellow);
+   }
     /*end of the section */
+ 
