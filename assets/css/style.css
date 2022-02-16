@@ -205,6 +205,13 @@
    }
    .copyright_style{
    	color: var(--fontgrey);
+   	
+   }
+   .footer_home_icon{
+   	 display: flex;
+   	justify-content: end;
+   	    margin-top: 22px;
+       
    }
    .footer_font{
    	font-size: 15px;
@@ -228,4 +235,26 @@
    	color: var(--primaryYellow);
    }
     /*end of the section */
+
+
+    /*responsiveness*/
+    @media (max-width: 768px) {
+       .nav_spacing_foot{
+   	      padding-left: 8px;
+   	      padding-right: 8px;
+        }
+        .footer_home_icon{
+        	flex-wrap: wrap;
+        	display: flex;
+   	      justify-content: center;
+        }
+        .footer_font_icon{
+        	margin-left: 8px;
+        	margin-right: 8px;
+        }
+        .alignment_logo{
+        	text-align: center;
+        }
+    }
+    /*end of the section*/
  
