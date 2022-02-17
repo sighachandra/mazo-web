@@ -7,13 +7,14 @@
     --fontgrey: #5d5c60;
    }
    /*main header styling*/
-.main_header1 {
+.main_header1{
   padding-top: ;
   background: #25282c;
   position: relative;
   display: block;
   z-index: 2;
   overflow: hidden;
+  display: block;
 }
 .main_header1:after {
   content: " ";
@@ -30,6 +31,64 @@
   transform: skew(35deg, 0deg) translateX(-50%);
   border-right: 4px solid white;
 }
+.main_header_2{
+	display: flex;
+	justify-content: space-between;
+}
+.logo_handburger_style{
+	display: flex;
+	justify-content: space-between;
+}
+.handBurger_style{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  /*handBurger dropdown styling*/
+  
+  .dropbtn_h {
+  background-color: var(--primaryYellow);
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn_h:hover, .dropbtn_h:focus {
+  background-color: var(--primaryYellow);
+}
+
+.dropdown_h {
+  position: relative;
+  display:  none;
+  margin-right: 12px;
+}
+
+.dropdown-content_h {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content_h a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_h a:hover {background-color: #ddd;}
+
+.show_h {display: block;}
+
+   /*end of the section*/
 .dropdown:hover .dropdown-menu{
     display: block;
     
@@ -234,11 +293,20 @@
    .footer_font_icon:hover{
    	color: var(--primaryYellow);
    }
+   .phn_p{
+   	left: 400px;
+   }
     /*end of the section */
 
 
     /*responsiveness*/
     @media (max-width: 768px) {
+    	 .main_header1{
+    	 	display: none !important;
+    	 }
+    	 .main_header_2{
+    	 	display: none;
+    	 }
        .nav_spacing_foot{
    	      padding-left: 8px;
    	      padding-right: 8px;
@@ -254,6 +322,22 @@
         }
         .alignment_logo{
         	text-align: center;
+        }
+        .img_sizing{
+        	height: 50px;
+        	width: auto;
+        	margin-top: 16px;
+        	margin-left: 2px;
+        }
+        .dropdown_h {
+        	display: inline-block;
+        }
+        .footer_email_phn{
+        	padding-left: 0px;
+        	font-size: 12px;
+        }
+        .phn_p{
+        	left: 0px;
         }
     }
     /*end of the section*/

@@ -26,11 +26,26 @@
        <div class="container">
        <div class="row">
           <div class="col-md-3">
+             <div class="logo_handburger_style">
              <div class="logo_header">
              <img class="img_sizing" src="assets/images/logo-4.png"/>
              </div>
+             <div class="handBurger_style">
+                 <div class="dropdown_h">
+                    <button type="button" onclick="handBurgerShow()" class="dropbtn_h"><i class="fas fa-bars"></i></button>
+                     <div id="myDropdown" class="dropdown-content_h animate slideIn">
+                        <a class="dropdown-item dropdown-item_style" href="#">Home</a>
+                        <a class="dropdown-item dropdown-item_style" href="#">Pages</a>
+                        <a class="dropdown-item dropdown-item_style" href="#">Shop</a>
+                        <a class="dropdown-item dropdown-item_style" href="#">Features</a>
+                        <a class="dropdown-item dropdown-item_style" href="#">Blog</a>
+                        <a class="dropdown-item dropdown-item_style" href="#">Contact Us</a>
+                     </div>
+                 </div>
+             </div>
+             </div>
           </div>
-          <div class="col-md-9 d-flex justify-content-between">
+          <div class="col-md-9  main_header_2">
             <!-- Begining of the navbar -->
 
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -158,11 +173,11 @@
       <div class="container-fluid  footer_second_bg">
         <div class="container footer_padding">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6 col-6">
               <div class="footer_email_phn"><i class="fas fa-envelope footer_emailphn_icon"></i>Email :info@example.com</div>
             </div>
-            <div class="col-md-6">
-              <div class="footer_email_phn"><i class="fa fa-phone-alt footer_emailphn_icon" style="left: 200px"></i>Support: 0800-123456</div>
+            <div class="col-sm-6 col-6">
+              <div class="footer_email_phn d-flex justify-content-end"><i class="fa fa-phone-alt footer_emailphn_icon phn_p"></i>Support: 0800-123456</div>
             </div>
           </div>
         </div>
@@ -202,16 +217,7 @@
 
     <!-- End of the footer -->
 
-    <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
+   
 
 
     <script src="assets/js/script.js"></script>
